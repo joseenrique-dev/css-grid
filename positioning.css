@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);    
+    grid-template-rows: repeat(3, 1fr);    
+}
+
+.container .item{
+    background: #ff8000;
+    /* grid-column-start: 1;
+    grid-column-end: -1; toma toda la columna
+    grid-row-start: 2;
+    grid-row-end: 4; */
+
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+
+    /* grid-column: 1 / 4;
+    grid-row: 1 / 3; */
+
+    /* grid-area: 2 / 1 / 4 / 3; */
+
+    /* Cuantas columnas quiero q abarque */
+    grid-column: span 3;
+    grid-row: span 2;
+}
