@@ -1,0 +1,62 @@
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header        header      header"
+                         "siderbar-1    content     siderbar-2"
+                         "siderbar-1    widgets      siderbar-2"
+                         "footer        footer      footer";
+}
+
+.container .header{
+    background: #ff8000;
+    grid-column-start: header;
+    grid-column-end: header;
+}
+
+.container .siderbar-1{
+    background: #393e46;
+    /* grid-column-start: siderbar-1;
+    grid-column-end: siderbar-1;
+
+    grid-row-start: siderbar-1;
+    grid-row-end: siderbar-1; */
+    /* es lo mismo */
+    /* grid-column: siderbar-1;
+    grid-row: siderbar-1; */
+    grid-area: siderbar-1;
+}
+
+.container .siderbar-2{
+    background: red;
+    /* grid-column-start: siderbar-2;
+    grid-column-end: siderbar-2;
+    grid-row-start: siderbar-2;
+    grid-row-end: siderbar-2; */
+    /* lo mismo */
+    /* grid-column: siderbar-2;
+    grid-row: siderbar-2; */
+    grid-area: siderbar-2;
+}
+
+.container .content{
+    background: #fff;
+    color: #000;
+    grid-area: content;
+} 
+
+.container .widgets{
+    background: #ff8000;
+    grid-area: widgets;
+} 
+
+.container .siderbar-2{
+    background: #393e46;
+    grid-area: siderbar-2;
+} 
+
+.container .footer{
+    background: #222831;
+    grid-area: footer;
+} 
