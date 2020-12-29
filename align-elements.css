@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);    
+    grid-template-rows: repeat(3, 200px);    
+
+    /* Acomoda el elemento dentro del div d forma horizontal
+    o sea q el div se ajusta horizontalmente al contenido 
+    que posea el div :auto/strech toma todo el valor disponible
+    , center:centra el texto; end lo situa en la derecha.
+    */
+    /* HORIZONTAL */
+    justify-items: end;
+
+    /* Igual pero vertical 
+    ,strech:Toma todo el espacio que pueda, en este caso toma verticalmente
+    el espacio del div.
+    */
+    /* VERTICAL */
+    align-items: end;
+}
+
+/* manipular la posición del elemento 5 */
+
+.container .item{
+    background: #ff8000;
+    /* de esta forma toma el 100% del espacio respetando los margenes */
+    justify-self: stretch;
+    align-self: end
+    
+}
